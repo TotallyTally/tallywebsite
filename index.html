@@ -34,7 +34,7 @@
 		<ul class="navlist">
 			<li><a href="#sec1">Home</a></li>
 			<li><a href="#sec2">About Me</a></li>
-			<li><a href="#sec3">My Stuff</a></li>
+			<li><a href="#sec3">My Works</a></li>
 			<li><a href="#sec4">Contact</a></li>
 		</ul>
 
@@ -60,21 +60,30 @@
 		</div>
 
 		<div>
-			<p>I started animation way back in 2017 as an 8 year old. Back then, I used to watch many stickfigure animators such as the very well-known Alan Becker, various animators from Hyun's Dojo, the original ElementXYZ series and many more.<br><br>It was then I started using Pivot Animator and started getting a sense for animation. It was really hard learning animation, but I got a hang of fluidity early on with pivot-based animation software.<br><br>Soon, I started using Adobe Animate, and it took a long time to re-learn all of the basics. But now, after a few years using Adobe, I have regained the same level of skill as the pivot-based animation software, leading to the current day.
+			<p>I started animation way back in 2017 as an 8 year old. Back then, I used to watch many stickfigure animators such as the very well-known Alan Becker, various animators from Hyun's Dojo, the original ElementXYZ series and many more.<br><br>It was then I started using Pivot Animator and started getting a sense for animation. It was really hard learning animation, but I got a hang of fluidity early on with pivot-based animation software.<br><br>Soon, I started using Adobe Animate, and it took a long time to re-learn all of the basics. But now, after a few years using Adobe, I have regained the same level of skill as the pivot-based animation software, leading to where I am now.
 			</p>
 		</div>
 	</section>
 	
 	<section class="third-section" id="sec3">
-		<div>
-			<h1>My Stuff</h1>
-		</div>
+
+			<div>
+				<h1>My Works</h1>
+			</div>
 		
-		<div>
-			<video width="550" height="auto" controls>
-				<source src="./videos/Hexal's Sword Challenge.mp4" type="video/mp4">
-			</video>
-		</div>
+			<div class="video-section">
+				<div class="bx bx-chevron-left" id="left-arrow" onclick="changeVidLeft()"></div>
+				<video width="60%" height="auto" id="vidplayer">
+					<source src="./videos/1.mp4" type="video/mp4">
+				</video>
+				<div class="bx bx-chevron-right" id="right-arrow" onclick="changeVidRight()"></div>
+			</div>
+			
+			<div class="video-buttons">
+				<button type="button" class="bx bx-play" id="play-button"></button>
+				<div class="playback"></div>
+			</div>
+
 	</section>
 
 	<section class="fourth-section" id="sec4">
@@ -82,9 +91,18 @@
 			<h1>Contact</h1>
 		</div>
 
-		<div>
+		<div class="contact-list">
 			<p>
-				Contact
+				Gmail
+			</p>
+			<p>
+				Youtube
+			</p>
+			<p>
+				Discord
+			</p>
+			<p>
+				Patreon
 			</p>
 		</div>
 	</section>

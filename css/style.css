@@ -169,12 +169,12 @@ section {
 .third-section {
 	height: 100%;
 	width: 100%;
-	min-height: 100vh;
+	min-height: 120vh;
 	position: relative;
-	display:flex;
+	display: flex;
 	flex-direction: column;
-	align-items: center;
-	background: radial-gradient(#cecece 0%, #b7b7b7 85%);
+	justify-content: center;
+	background: linear-gradient(225deg,#98e4d9 0%, #52a79b 85%);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -185,9 +185,97 @@ section {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 80px;
-	color: black;
-	margin-top: 60px;
-	margin-bottom: 25px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+	color: white;
+}
+
+.video-section {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+#left-arrow {
+	margin-top: 100;
+	margin-bottom: 100;
+	font-size: 100;
+	cursor: pointer;
+	transition: all .25s ease;
+	color: white;
+	-webkit-text-stroke: 1px white;
+}
+
+#left-arrow:hover {
+	transform: translateX(-4px);
+	color: #008c72;
+	-webkit-text-stroke: 1px white;
+}
+
+#right-arrow {
+	margin-top: 100;
+	margin-bottom: 100;
+	font-size: 100;
+	cursor: pointer;
+	transition: all .25s ease;
+	color: white;
+	-webkit-text-stroke: 1px white;
+}
+
+#right-arrow:hover {
+	transform: translateX(4px);
+	color: #008c72;
+	-webkit-text-stroke: 1px white;
+}
+
+.video-buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding-top: 20px;
+}
+
+.third-section button {
+	display: inline-block;
+	color: #008c72;
+	background: #c2ffe5;
+	border: 1px solid transparent;
+	padding: 12px 30px;
+	line-height: 1.4;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 30px;
+	text-transform: uppercase;
+	transition: all .55s ease;
+	font-size: 20px;
+	
+}
+
+.third-section button:hover {
+	background: transparent;
+	color: white;
+	border: 1px solid white;
+	transform: translateX(4px);
+}
+
+.fourth-section {
+	background: #000000;
+	color: white;
+	min-height: 60vh;
+}
+
+.fourth-section h1 {
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+.contact-list {
+	display: grid;
+	justify-content: space-between;
+	grid-template-columns: auto auto auto;
+	height: 200px;
 }
 
 
@@ -288,6 +376,19 @@ section {
 		grid-template-columns: 1fr;
 		min-height: 150vh;
 	}
+	.third-section {
+		height: 100%;
+		gap: 1rem;
+		min-height: 150vh;
+	}
+	#right-arrow {
+		font-size: 50px;
+		margin-top: 125px;
+	}
+	#left-arrow {
+		font-size: 50px;
+		margin-top: 125px;
+	}
 
 }
 @media (max-width: 990px) {
@@ -326,6 +427,9 @@ section {
 	}
 	.secondary-section h1 {
 		margin: 0 0 0px 0;
+	}
+	.video-section {
+		width: 100%;
 	}
 }
 
